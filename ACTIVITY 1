@@ -1,0 +1,22 @@
+#include<stdio.h>
+//Automatic water pump operator
+int main() {
+float Current_waterlevel;
+printf("Enter the current water level: ");
+scanf("%f",&Current_waterlevel);
+printf("Current water percentage is %f \n ".Current_waterlevel);
+if(Current_waterlevel <25 )
+{
+printf("Motor is OFF"):
+}else if
+(Current_waterlevel > 25 && Current_waterlevel 60)
+{
+printf(" Motor is ON for 10 min");
+}else if(Current_waterlevel > 60 && Current_waterlevel <= 95)
+{
+printf("Motor is ON for 5 min");
+}else{
+printf("Motor is OFF");
+}
+return 0;
+{
