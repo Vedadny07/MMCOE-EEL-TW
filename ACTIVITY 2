@@ -9,12 +9,13 @@ int main() {
     }else if (stock_1>100 && stock_1<=500){
         printf(" 5. GK Energy = 161₹ \n 6.GHV Infra = 324 \n 7.Sathlokhar Sys.= 474.95₹ \n 8.Hindustan Zinc = 482.30₹	");
     }else if(stock_1>500 && stock_1<=2000){
-        printf("9.Tips Music = 587.400₹ \n 10.Oswal Pumps = 722.00₹ \n 11.Shakti Pumps = 817.00₹ \n 12.Nestle India = 1148.00₹\n 13.Indo Tech.Trans. = 1680.00₹\n	");
+        printf("9.Tips Music = 587.400₹ \n 10.Oswal Pumps = 722.00₹ \n 11.Shakti Pumps = 817.00₹ \n 12.Nestle India = 1148.00₹\n 13.Indo Tech.Trans. = 1680.00₹\n\n	");
     } else{
-        printf(" Go to - https://Groww.co/ ");
+        printf(" Go to - https://Groww.co/ \n");
     }
     int No;
-    printf("\n Enter the stock no You short listeted or other- ");
+    printf(" \n                FOR ADVISE                    \n");
+    printf("\n Enter the stock no You short listeted or - ");
     scanf("%d",&No);
     if ( No >=1 && No<=4 ){
     printf(" BUY These stocks for long term investment");
