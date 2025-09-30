@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main() {
+    int stock_1;
+    printf(" Stocks between 1 Rs to 2000 Rs\n");
+    printf(" Enter Your Budget Per Stocks - ");
+    scanf("%d",&stock_1);
+    if(stock_1>=1 && stock_1<=100){
+        printf(" 1.Vodafon Idea = 8.56₹\n 2.Suzlon Energy Ltd = 55.28₹\n 3.IDBI BANK Ltd. = 89.35₹\n 4.Ntpc Green Energy Ltd = 97.12₹  ");
+    }else if (stock_1>100 && stock_1<=500){
+        printf(" 5. GK Energy = 161₹ \n 6.GHV Infra = 324 \n 7.Sathlokhar Sys.= 474.95₹ \n 8.Hindustan Zinc = 482.30₹	");
+    }else if(stock_1>500 && stock_1<=2000){
+        printf("9.Tips Music = 587.400₹ \n 10.Oswal Pumps = 722.00₹ \n 11.Shakti Pumps = 817.00₹ \n 12.Nestle India = 1148.00₹\n 13.Indo Tech.Trans. = 1680.00₹\n	");
+    } else{
+        printf(" Go to - https://Groww.co/ ");
+    }
+    int No;
+    printf("\n Enter the stock no You short listeted or other- ");
+    scanf("%d",&No);
+    if ( No >=1 && No<=4 ){
+    printf(" BUY These stocks for long term investment");
+    } else if ( No>4 && No<=8){
+        printf(" Buy atleast 100 stocks");
+    } else if (No>8 && No<=13){
+        printf("By this stocks on Your risk");
+    }else{
+        printf("Go to - https://dhan.co/");
+    }
+   
+    return 0;
+}
