@@ -1,0 +1,62 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,c;
+    char details[5000];
+    char max[5000];
+    printf("Enter the Dish name- ");
+    scanf("%s",max);
+    printf("Price- ");
+    scanf("%d",&c);
+    printf("QTY- ");
+    scanf("%d",&b);
+    int d,e,f;
+    char dish2[500];
+    printf("Enter the Dish name - ");
+    scanf("%s",dish2);
+    printf("Price- ");
+    scanf("%d",&e);
+    printf("QTY- ");
+    scanf("%d",&f);
+    int g,h;
+    char dish3[500];
+    printf("Enter the Dish name - ");
+    scanf("%s",dish3);
+    printf("Price- ");
+    scanf("%d",&g);
+    printf("QTY- ");
+    scanf("%d",&h);
+    int total = 0;
+    total = ((c*b)+(e*f)+(g*h));
+    
+    printf("                                        || श्री || \n");
+ printf("                                      Sriganda Palace \n              ");
+   printf("            Ra,K Reddy Layout, Annalan Reddy Layout,\n");
+   printf("                                  Pimple Gurav,Pune 411061\n\n");
+   printf("                                    GST NO 294DDPB8125K1 \n\n ");
+   printf(" \t\t --------------------------------- RECEIPT -----------------------------------\n");
+    
+    printf("\nName :");
+    scanf("%s",details);
+    printf("Table No :");
+    scanf("%s",details);
+    
+   printf("--------------------------------------------------------------------------------------------------\n");
+   printf(" Items \t\t\t\t\t\t\t\tPrice \t\t\t\t Qty \n");
+   printf("--------------------------------------------------------------------------------------------------\n");
+   
+   printf( " %s    ",max );
+   printf("\t\t\t\t\t\t\t\t%d",c);
+   printf("\t\t\t        %d\n",b);
+   printf( " %s    ",dish2 );
+   printf("\t\t\t\t\t\t\t\t%d",e);
+   printf("\t\t\t        %d\n",f);
+   printf( " %s    ",dish3 );
+   printf("\t\t\t\t\t\t\t\t%d",g);
+   printf("\t\t\t        %d\n",h);
+   printf( "             \t\t\t\tTOTAL - %d\n",total);
+   printf("-------------------------------------------------------------------------------\n");
+     printf(" \t\t\t\t\t\t\t\tVISIT AGAIN 😊 ");                       
+                   
+    return 0;
+}
