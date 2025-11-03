@@ -1,0 +1,49 @@
+#include <stdio.h>
+struct account_holder{
+    int acc_no;
+    char name[10];
+    int addh_no;
+    int bank_balance;
+    int contact_no;
+};
+int main()
+{
+    int n;
+    printf("Enter the No. of bank holders - ");
+    scanf("%d",&n);
+    printf("\n");
+    struct account_holder bank[500];
+    
+    for( int i = 0; i < n; i++){
+     printf("%d. ", i + 1); 
+      printf("Account No - ");
+      scanf("%d",&bank[i].acc_no);
+     printf("Name - ");
+     scanf("%s",bank[i].name); 
+     printf("Contact no.- ");
+     scanf("%d",&bank[i].contact_no);
+     printf("Aadharcard No - ");
+     scanf("%d",&bank[i].addh_no);
+     printf("Bank Balance - ");
+     scanf("%d",&bank[i].bank_balance);
+    printf("----------------\n");
+    }
+    for (int i = 0; i < n - 1; i++) {
+        for (int j = 0; j < n - i - 1; j++) {
+            if (bank[j].bank_balance > bank[j + 1].bank_balance) {
+                struct account_holder temp = bank[j];
+                bank[j] = bank[j + 1];
+                bank[j + 1] = temp;
+            }
+        }
+    }
+    for( int i = 0; i < n; i++){
+    printf("%d. Balance: %d₹\n", i + 1, bank[i].bank_balance);
+    printf("  Name: %s\n", bank[i].name);
+    printf("  Account No: %d\n", bank[i].acc_no);
+    printf("  Contact No: %d\n", bank[i].contact_no);
+    printf("  Aadharcard No: %d \n", bank[i].addh_no);
+    }
+    
+    return 0;
+}
